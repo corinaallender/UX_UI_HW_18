@@ -1,0 +1,113 @@
+/* Font Styling */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+h2{
+    font-size: 48px;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: normal;
+}
+p {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+
+/* Navigation*/
+.navigation{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.main-nav{
+    display:flex;
+    justify-content: space-between;
+    word-spacing: 10px;
+    padding: 2rem;
+
+}
+.main-nav div{
+    margin: 0px 10px;
+}
+
+.logo {
+    width: 30%;
+    padding: 1%;
+    justify-content: left;
+}
+
+/* Hero */
+
+.heroSection {
+    display: flex;
+    align-items: center;
+    margin: 75px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.heroCopy {
+    display:flex;
+    max-width: 100%;
+    padding-left: 200px;
+    padding-right: 200px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.button {
+    display: flex;
+    align-items: left;
+    background-color: white;
+    color:#6E6868;
+    border-style:line;
+    border-color: #6E6868;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 25px;
+    justify-content: left;
+}
+/* Projects*/
+
+.featuredProjects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 50px;
+    margin-left: 35px;
+    text-align: start-end;
+
+
+}
+
+/* Footer */
+
+.footer {
+    background-image: url("../Images/footer_bg.png");
+    background-size: cover;
+    position: relative;
+    padding: 25px;
+    background-size: 1444px 469px;
+
+
+}
+
+.socialIcons {
+    display: flex;
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: left;
+    text-decoration: none;
+}
