@@ -111,3 +111,14 @@ p {
     text-align: left;
     text-decoration: none;
 }
+
+@media only screen and (max-width: 600px) {
+    .featuredProjects {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 50px;
+        margin-left: 35px;
+        text-align: start-end;
+
+    }
+}
