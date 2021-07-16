@@ -6,20 +6,23 @@ body{
     margin: 0px;
 }
 
-h2{
-    font-size: 48px;
-    font-weight: normal;
-}
-
 h1 {
     font-size: 48px;
     font-weight: bold;
+
+}
+
+h2{
+    font-size: 39px;
+    font-weight: normal;
+
 }
 
 h3 {
     font-size: 25px;
     font-weight: normal;
 }
+
 p {
     font-size: 16px;
     font-weight: normal;
@@ -27,6 +30,7 @@ p {
 
 
 /* Navigation*/
+
 .navigation{
     display: flex;
     width: 100%;
@@ -51,61 +55,91 @@ p {
     padding-left: 15px;
 }
 
-/* Hero */
+/* Hero*/
 
-.heroSection {
+.jumbotron {
+    color: black;
+    background-position: center;
+    height: 100vh;
     display: flex;
-    align-items: flex-start;
-    margin: 75px;
-    justify-content: center;
     flex-direction: column;
-    padding-left: 200px;
-    padding-right: 200px;
+    margin-left: 250px;
+    margin-right: 200px;
+    padding-top: 75px;
 
+}
+
+.textPhoto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 800px;
+    align-items: top; 
+    padding-right: 50px;
+}
+
+.aboutMe {
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+/* My Skills */
+
+.Skills {
+    background-color: #F1F4F6;
+}
+
+.Heading2 {
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 50px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.card-body {
+    display: grid;
+    flex-direction: column;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.buttonArea {
+    display: flex;
+    justify-content: center;
 }
 
 .button {
     background-color: white;
     color:#6E6868;
     padding: 15px 32px;
-    text-align: center;
     font-size: 25px;
     outline: none;
     border: 3px solid #6E6868;
-}
-/* Projects*/
-
-.featuredProjects {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 30px;
-    text-align: start-end;
-    padding-bottom: 50px;
-    margin: 0px auto;
-    width: 90%;
-    
-
-}
+    text-decoration: none;
+    text-align: center;
 
 
-.h3 { 
-    align-items: center
-    
-}
-
-
-.dateArrow {
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
 }
 
 /* Footer */
 
 .footer {
     display: grid;
-    height: 469px;
+    height: 150px;
     width:1444px;
     grid-template-areas:
     "Headline Headline" 
@@ -113,9 +147,9 @@ p {
     "Copyright Social";
     grid-template-rows: 40% 30% 30%;
     grid-template-columns: 90% 10%;
-    background-image: url("../Images/footer_bg.png");
     background-size: 100%;
     background-repeat: no-repeat;
+    padding-bottom: 30px;
 
 }
 
@@ -146,39 +180,11 @@ p {
 
 .email {
     color: black;
+
 }
-    
-
-@media only screen and (max-width: 600px) {
-    .featuredProjects {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-row-gap: 50px;
-        margin-left: 35px;
-        text-align: start-end;
-
-
-    }
-
-    .heroSection {
-        padding-left: 10px;
-        padding-right: 10px;
-        font-size: 10px;
-
-
-    }
-    
-    h2{
-        font-size: 38px;
-        font-weight: normal;
-        justify-content: center;
-
-    }
-    .nav{
-        flex-direction: column-reverse;
-    }
- }
+.fab {
+    padding: 5px;
+}
 
 
  
